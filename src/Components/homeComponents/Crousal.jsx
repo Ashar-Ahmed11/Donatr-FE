@@ -62,7 +62,8 @@ const color = "#108515"
             className={`${isMobile ? 'fw-bold fs-3' : 'display-5 fw-bold px-5'}`}
             style={{ color: 'white' }}
           >
-            The Akhuwat Foundation Loan Program is seen by many experts as one of the best ways to get a loan in Pakistan.
+            {/* The Akhuwat Foundation Loan Program is seen by many experts as one of the best ways to get a loan in Pakistan. */}
+            Apply Akhuwat Foundation Loan
           </h1>
         </div>
 
