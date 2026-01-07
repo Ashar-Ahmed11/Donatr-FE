@@ -10,7 +10,8 @@ import asaanQarz11 from '../Images/newAkhuwat16.jpg'
 import asaanQarz12 from '../Images/newAkhuwat17.jpg'
 import CountUp from 'react-countup';
 import SecImg from '../Images/12.jpg'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import ApplyLoanForm from './homeComponents/ApplyLoanForm'
 
 const akhuwatLoanOnlineApply = () => {
   return (
@@ -27,6 +28,7 @@ const akhuwatLoanOnlineApply = () => {
         Achieve Your Goals and Grow. Akhuwat Foundation helps people and businesses become financially independent by providing customized loan solutions. Whether you want to go to college, grow your business, or buy a house, Akhuwat's simple, interest-free loans can help you move forward with confidence and work toward long-term success.
         </p>
       </div>
+            <ApplyLoanForm/>
 
       {/* Personal Loans Section */}
       <div className="row mb-5 align-items-center">

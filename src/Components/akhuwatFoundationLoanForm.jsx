@@ -10,7 +10,8 @@ import asaanQarz11 from '../Images/newAkhuwat16.jpg'
 import asaanQarz12 from '../Images/newAkhuwat17.jpg'
 import CountUp from 'react-countup';
 import SecImg from '../Images/12.jpg'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import ApplyLoanForm from './homeComponents/ApplyLoanForm'
 
 const akhuwatFoundationLoanForm = () => {
   return (
@@ -33,6 +34,7 @@ const akhuwatFoundationLoanForm = () => {
 The Akhuwat Foundation's loan program can help you make your business dreams come true, whether you want to open a store, start a service business, or invest in small-scale manufacturing.
         </p>
       </div>
+            <ApplyLoanForm/>
 
       {/* Benefits Section */}
       <div className="row mb-5 align-items-center">

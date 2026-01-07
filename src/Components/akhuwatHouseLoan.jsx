@@ -5,7 +5,8 @@ import FirstOne from '../Images/House Loan.jpg';
 import SecOne from '../Images/For house loan.jpg';
 import asaanQarz13 from '../Images/newAkhuwat18.jpg'
 import asaanQarz14 from '../Images/newAkhuwat19.jpg'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import ApplyLoanForm from './homeComponents/ApplyLoanForm'
 
 
 const akhuwatHouseLoan = () => {
@@ -23,6 +24,7 @@ const akhuwatHouseLoan = () => {
         Getting your dream home is possible thanks to the Akhuwat Foundation. A lot of people can't afford a standard mortgage, which keeps them from becoming homeowners. Akhuwat's Housing Loan program gets rid of those problems by giving loans with no interest to people who need it the most.
         </p>
       </div>
+            <ApplyLoanForm/>
 
       {/* Benefits Section */}
       <div className="row mb-5 align-items-center">
