@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div>
       <Crousal />
-      <ApplyLoanForm />
+      {/* <ApplyLoanForm /> */}
       <StatsCards />
       <AkhuwatImages2 />
       <Cards />

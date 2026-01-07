@@ -62,12 +62,11 @@ const color = "#108515"
             className={`${isMobile ? 'fw-bold fs-3' : 'display-5 fw-bold px-5'}`}
             style={{ color: 'white' }}
           >
-            {/* The Akhuwat Foundation Loan Program is seen by many experts as one of the best ways to get a loan in Pakistan. */}
-            Apply Akhuwat Foundation Loan
+            The Akhuwat Foundation Loan Program is seen by many experts as one of the best ways to get a loan in Pakistan.
           </h1>
         </div>
 
-        {/* <div className="col-md-6 d-flex justify-content-center align-items-center">
+        <div className="col-md-6 d-flex justify-content-center align-items-center">
           <div
             data-aos="fade-left"
             data-aos-duration="1500"
@@ -289,7 +288,7 @@ const color = "#108515"
               <p className='pt-3'>If you have submitted your loan request, then check your status by <a href="#loan-status">clicking here</a></p>
             </form>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
