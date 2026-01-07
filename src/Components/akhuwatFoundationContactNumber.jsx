@@ -1,18 +1,25 @@
-import React from 'react';
-import CountUp from 'react-countup';
+import React from 'react'
+import asaanQarz9 from '../Images/newAkhuwat14.jpg'
+import asaanQarz10 from '../Images/newAkhuwat15.jpg'
+import FirstOne from '../Images/House Loan.jpg';
+import SecOne from '../Images/For house loan.jpg';
+import asaanQarz13 from '../Images/newAkhuwat18.jpg'
+import asaanQarz14 from '../Images/newAkhuwat19.jpg'
 import myImg from '../Images/Loan Scheme.jpg'
 import asaanQarz11 from '../Images/newAkhuwat16.jpg'
 import asaanQarz12 from '../Images/newAkhuwat17.jpg'
+import CountUp from 'react-countup';
+import SecImg from '../Images/12.jpg'
 import {Helmet} from "react-helmet";
 
-const AkhuwatBusinessLoan = () => {
+const akhuwatFoundationContactNumber = () => {
   return (
     <>
-    <Helmet>
-                                                <meta charSet="utf-8" />
-                                                <title>Akhuwat Business Loan</title>
-                                                <meta name="description" content="Akhuwat Business Loan provides interest-free financial support to help entrepreneurs start, grow, or expand their businesses with simple eligibility in Pakistan." />
-                                            </Helmet>
+     <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Akhuwat Foundation Contact Number</title>
+                    <meta name="description" content="Looking for the Akhuwat Foundation contact number? Get official phone numbers, office details, and guidance for interest-free loan applications in Pakistan." />
+                </Helmet>
     <div className="container-fluid px-4 py-4" style={{ maxWidth: "1100px", margin: "0 auto", fontSize: '22px' }}>
       {/* Header Section */}
       <div className="text-center mb-5">
@@ -109,7 +116,7 @@ The Akhuwat Foundation's loan program can help you make your business dreams com
       </div>
     </div>
     </>
-  );
-};
+  )
+}
 
-export default AkhuwatBusinessLoan;
+export default akhuwatFoundationContactNumber

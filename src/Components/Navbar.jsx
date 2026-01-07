@@ -32,8 +32,79 @@ const Navbar = () => {
     Akhuwat Foundation Loan Service
   </Link>
   <ul className="dropdown-menu">
-    <li><Link className="dropdown-item" to="/akhuwat-bussiness-loan">Akhuwat Foundation Business Loan</Link></li>
-    <li><Link className="dropdown-item" to="/akhuwat-house-loan">Akhuwat Foundation House Loan</Link></li>
+  <li>
+  <Link className="dropdown-item" to="/akhuwat-business-loan">
+    Akhuwat Foundation Business Loan
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-house-loan">
+    Akhuwat Foundation House Loan
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-loan-online-apply">
+    Akhuwat Loan Online Apply
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-foundation-contact-number">
+    Akhuwat Foundation Contact Number
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-foundation-loan-scheme">
+    Akhuwat Foundation Loan Scheme
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-foundation-loan-form">
+    Akhuwat Foundation Loan Form
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-foundation-student-loan">
+    Akhuwat Foundation Student Loan
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-education-loan">
+    Akhuwat Education Loan
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-pakistan-loan">
+    Akhuwat Pakistan Loan
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-loan-karachi">
+    Akhuwat Loan Karachi
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-loan-lahore">
+    Akhuwat Loan Lahore
+  </Link>
+</li>
+
+<li>
+  <Link className="dropdown-item" to="/akhuwat-loan-multan">
+    Akhuwat Loan Multan
+  </Link>
+</li>
+
+    
   </ul>
 </li>
 

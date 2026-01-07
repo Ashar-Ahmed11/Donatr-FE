@@ -1,6 +1,4 @@
-import React from 'react';
-import CountUp from 'react-countup';
-import SecImg from '../Images/12.jpg'
+import React from 'react'
 import asaanQarz9 from '../Images/newAkhuwat14.jpg'
 import asaanQarz10 from '../Images/newAkhuwat15.jpg'
 import FirstOne from '../Images/House Loan.jpg';
@@ -10,18 +8,19 @@ import asaanQarz14 from '../Images/newAkhuwat19.jpg'
 import myImg from '../Images/Loan Scheme.jpg'
 import asaanQarz11 from '../Images/newAkhuwat16.jpg'
 import asaanQarz12 from '../Images/newAkhuwat17.jpg'
+import CountUp from 'react-countup';
+import SecImg from '../Images/12.jpg'
 import {Helmet} from "react-helmet";
 
-
-const akhuwatLoanServices = () => {
+const akhuwatLoanOnlineApply = () => {
   return (
-     <>
+    <>
           <Helmet>
                                                 <meta charSet="utf-8" />
-                                                <title>Akhuwat Loan Service</title>
-                                                <meta name="description" content="Akhuwat Loan Service provides interest-free financial support for education, business, and housing, helping individuals and families achieve stability across Pakistan." />
+                                                <title>Akhuwat Loan Online Apply</title>
+                                                <meta name="description" content="Apply for Akhuwat Loan online easily! Access interest-free loans for education, business, and housing with a simple application process from anywhere in Pakistan." />
                                             </Helmet>
-    <div className="container-fluid px-4 py-4" style={{ maxWidth: "1000px", margin: "0 auto" , fontSize:"22px"}}>
+     <div className="container-fluid px-4 py-4" style={{ maxWidth: "1000px", margin: "0 auto" , fontSize:"22px"}}>
       <div className="text-center mb-5">
         <h1 className="fw-bold mb-3">Akhuwat Foundation Loan Services in Pakistan Can Help You</h1>
         <p className="lead mx-auto" style={{ maxWidth: "900px" }}>
@@ -132,7 +131,7 @@ const akhuwatLoanServices = () => {
       </div>
     </div>
     </>
-  );
-};
+  )
+}
 
-export default akhuwatLoanServices;
+export default akhuwatLoanOnlineApply

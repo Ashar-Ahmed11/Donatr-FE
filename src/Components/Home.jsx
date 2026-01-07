@@ -12,12 +12,14 @@ import AkhuwatImages1 from './homeComponents/AkhuwatImages1'
 import AkhuwatImages2 from './homeComponents/AkhuwatImages2'
 import AkhuwatImages3 from './homeComponents/AkhuwatImages3'
 import StatsCards from './homeComponents/StatsCard'
+import ApplyLoanForm from './homeComponents/ApplyLoanForm'
 import AkhuwatPlans from './akhuwatplans'
 
 const Home = () => {
   return (
     <div>
       <Crousal />
+      <ApplyLoanForm />
       <StatsCards />
       <AkhuwatImages2 />
       <Cards />

@@ -12,6 +12,17 @@ import PrivacyPolicy from './Components/PrivacyPolicy';
 import TermsAndCondition from './Components/TermsAndCondition';
 import Disclaimer from './Components/Disclaimer';
 import ContactUS from './Components/contactUs';
+import AkhuwatLoanOnlineApply from './Components/akhuwatLoanOnlineApply';
+import AkhuwatFoundationContactNumber from './Components/akhuwatFoundationContactNumber';
+import AkhuwatFoundationLoanScheme from './Components/akhuwatFoundationLoanScheme';
+import AkhuwatFoundationLoanForm from './Components/akhuwatFoundationLoanForm';
+import AkhuwatFoundationStudentLoan from './Components/akhuwatFoundationStudentLoan';
+import AkhuwatEducationLoan from './Components/akhuwatEducationLoan';
+import AkhuwatPakistanLoan from './Components/akhuwatPakistanLoan';
+import AkhuwatLoanKarachi from './Components/akhuwatLoanKarachi';
+import AkhuwatLoanLahore from './Components/akhuwatLoanLahore';
+import AkhuwatLoanMultan from './Components/akhuwatLoanMultan';
+
 import {
 
   Switch,
@@ -70,11 +81,41 @@ const location = useLocation()
         <Route exact path="/akhuwat-loan-service">
           <AkhuwatLoanService />
         </Route>
-        <Route exact path="/akhuwat-bussiness-loan">
+        <Route exact path="/akhuwat-business-loan">
           <AkhuwatBussinessLoan />
         </Route>
         <Route exact path="/akhuwat-house-loan">
           <AkhuwatHouseLoan />
+        </Route>
+        <Route exact path="/akhuwat-loan-online-apply">
+          <AkhuwatLoanOnlineApply />
+        </Route>
+        <Route exact path="/akhuwat-foundation-contact-number">
+          <AkhuwatFoundationContactNumber />
+        </Route>
+        <Route exact path="/akhuwat-foundation-loan-scheme">
+          <AkhuwatFoundationLoanScheme />
+        </Route>
+        <Route exact path="/akhuwat-foundation-loan-form">
+          <AkhuwatFoundationLoanForm />
+        </Route>
+        <Route exact path="/akhuwat-foundation-student-loan">
+          <AkhuwatFoundationStudentLoan />
+        </Route>
+        <Route exact path="/akhuwat-education-loan">
+          <AkhuwatEducationLoan />
+        </Route>
+        <Route exact path="/akhuwat-pakistan-loan">
+          <AkhuwatPakistanLoan />
+        </Route>
+        <Route exact path="/akhuwat-loan-karachi">
+          <AkhuwatLoanKarachi />
+        </Route>
+        <Route exact path="/akhuwat-loan-lahore">
+          <AkhuwatLoanLahore />
+        </Route>
+        <Route exact path="/akhuwat-loan-multan">
+          <AkhuwatLoanMultan />
         </Route>
         <Route exact path="/about-us">
           <AboutUs />

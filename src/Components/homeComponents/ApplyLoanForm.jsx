@@ -1,72 +1,35 @@
 import React, { useEffect, useState, useContext } from 'react';
 import AppContext from '../context/appContext';
 import coverImage from '../../Images/carousalImg.jpg'
-const Crousal = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [uploading, setUploading] = useState(false); // New loading state
 
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const { handleFileUpdate, userData, setUserData, createUser, inputRef, createUserLoader, siteData } = useContext(AppContext);
-
-  // Wrapper for file change to handle loading
-  const uploadImage = (fieldName) => async (e) => {
-  setUploading(true);
-  try {
-    await handleFileUpdate(e, fieldName);
-  } catch (err) {
-    console.error("Upload error:", err);
-  } finally {
-    setUploading(false);
-  }
-};
-
-const color = "#108515"
-
+const ApplyLoanForm = () => {
+     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+      const [uploading, setUploading] = useState(false); // New loading state
+    
+      useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+    
+      const { handleFileUpdate, userData, setUserData, createUser, inputRef, createUserLoader, siteData } = useContext(AppContext);
+    
+      // Wrapper for file change to handle loading
+      const uploadImage = (fieldName) => async (e) => {
+      setUploading(true);
+      try {
+        await handleFileUpdate(e, fieldName);
+      } catch (err) {
+        console.error("Upload error:", err);
+      } finally {
+        setUploading(false);
+      }
+    };
+    
+    const color = "#108515"
   return (
-    <div
-      className="container-fluid py-5 d-flex justify-content-center align-items-center flex-wrap mainCarousal"
-      style={{
-        height: '1300px',
-        backgroundImage:
-          `url(${coverImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        position: 'relative',
-      }}
-    >
-      {/* Dark overlay */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgb(50 168 92 / 25%)',
-          zIndex: 1,
-        }}
-      />
-
-      {/* Content row */}
-      <div className="row w-100 position-relative" style={{ zIndex: 2 }}>
-        <div className={`col-md-6 ${isMobile ? 'col-12 mb-4' : ''} d-flex align-items-center`}>
-          <h1
-            data-aos="fade-right"
-            data-aos-duration="1500"
-            className={`${isMobile ? 'fw-bold fs-3' : 'display-5 fw-bold px-5'}`}
-            style={{ color: 'white' }}
-          >
-            The Akhuwat Foundation Loan Program is seen by many experts as one of the best ways to get a loan in Pakistan.
-          </h1>
-        </div>
-
-        {/* <div className="col-md-6 d-flex justify-content-center align-items-center">
+    // col-md-6
+   <div className=" d-flex justify-content-center align-items-center m-5">
           <div
             data-aos="fade-left"
             data-aos-duration="1500"
@@ -288,10 +251,8 @@ const color = "#108515"
               <p className='pt-3'>If you have submitted your loan request, then check your status by <a href="#loan-status">clicking here</a></p>
             </form>
           </div>
-        </div> */}
-      </div>
-    </div>
-  );
-};
+        </div>
+  )
+}
 
-export default Crousal;
+export default ApplyLoanForm
