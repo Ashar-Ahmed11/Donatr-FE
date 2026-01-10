@@ -29,7 +29,7 @@ const akhuwatLoanServices = () => {
         Achieve Your Goals and Grow. Akhuwat Foundation helps people and businesses become financially independent by providing customized loan solutions. Whether you want to go to college, grow your business, or buy a house, Akhuwat's simple, interest-free loans can help you move forward with confidence and work toward long-term success.
         </p>
       </div>
-      <ApplyLoanForm/>
+      
       {/* Personal Loans Section */}
       <div className="row mb-5 align-items-center">
         <div className="col-lg-7 col-md-6">
@@ -113,7 +113,7 @@ const akhuwatLoanServices = () => {
                 
       </div>
       </div>
-            
+            <ApplyLoanForm/>
 
       {/* Housing Loans Section */}
       <div className="row mb-5 align-items-center">

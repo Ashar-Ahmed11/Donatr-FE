@@ -34,8 +34,6 @@ const akhuwatFoundationLoanForm = () => {
 The Akhuwat Foundation's loan program can help you make your business dreams come true, whether you want to open a store, start a service business, or invest in small-scale manufacturing.
         </p>
       </div>
-            <ApplyLoanForm/>
-
       {/* Benefits Section */}
       <div className="row mb-5 align-items-center">
         <div className="col-lg-7 col-md-6">
@@ -107,6 +105,8 @@ The Akhuwat Foundation's loan program can help you make your business dreams com
           </p>
         </div>
       </div>
+
+            <ApplyLoanForm/>
 
       {/* Conclusion Section */}
       <div className="row mb-5">

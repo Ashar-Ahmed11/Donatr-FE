@@ -24,7 +24,7 @@ const akhuwatHouseLoan = () => {
         Getting your dream home is possible thanks to the Akhuwat Foundation. A lot of people can't afford a standard mortgage, which keeps them from becoming homeowners. Akhuwat's Housing Loan program gets rid of those problems by giving loans with no interest to people who need it the most.
         </p>
       </div>
-            <ApplyLoanForm/>
+            
 
       {/* Benefits Section */}
       <div className="row mb-5 align-items-center">
@@ -81,6 +81,7 @@ const akhuwatHouseLoan = () => {
           </div>
         </div>
       </div>
+      <ApplyLoanForm/>
 
       {/* Application Process Section */}
       <div className="row mb-5 align-items-center">

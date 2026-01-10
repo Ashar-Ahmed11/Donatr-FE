@@ -19,11 +19,11 @@ const Home = () => {
   return (
     <div>
       <Crousal />
-      {/* <ApplyLoanForm /> */}
       <StatsCards />
       <AkhuwatImages2 />
       <Cards />
       <AkhuwatImages3 />
+      <ApplyLoanForm />
       <AkhuwatPlans/>
    <WhyChooseAkhuwat />
    <AkhuwatLoanStatus/>

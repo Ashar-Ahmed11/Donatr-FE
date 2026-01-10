@@ -120,3 +120,56 @@ background: linear-gradient(179deg, rgba(255, 255, 255, 1) 0%, rgba(87, 199, 133
     transform: translateX(-50%);
   }
 }
+
+.heading {
+  /* position: fixed; */
+  bottom: -4px;
+  left: 9px;
+  font-size: 50px;
+  z-index: 99999999;
+  border-radius: 100%;
+  color: white; 
+  animation: pulseColor 1.5s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes pulseColor {
+  0% {
+    transform: scale(1);
+    color: white;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #108515;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+}
+
+.car-btn {
+   bottom: -4px;
+  left: 9px;
+  /* font-size: 50px; */
+  z-index: 99999999;
+  /* border-radius: 100%; */
+  color: white; 
+  animation: carBtn 1.5s infinite ease-in-out;
+}
+ 
+
+@keyframes carBtn {
+  0% {
+    transform: scale(1);
+    color: white;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+}

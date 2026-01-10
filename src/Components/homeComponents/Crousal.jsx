@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import AppContext from '../context/appContext';
 import coverImage from '../../Images/carousalImg.jpg'
+import { Link } from 'react-scroll';
 const Crousal = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [uploading, setUploading] = useState(false); // New loading state
@@ -28,13 +29,86 @@ const Crousal = () => {
 const color = "#108515"
 
   return (
+    <>
+    <style>
+        {`
+          .youtube-btn {
+            background-color: #FF0000;
+            border: 2px solid #FF0000;
+            color: white;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+          }
+          
+          .youtube-btn:hover {
+            background-color: #FF0000;
+            color: white;
+            border-color: #FF0000;
+            transform: scale(1.05);
+          }
+          
+          .facebook-btn {
+            background-color: #1877F2;
+            border: 2px solid #1877F2;
+            color: white;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+          }
+          
+          .facebook-btn:hover {
+            background-color: #1877F2;
+            color: white;
+            border-color: #1877F2;
+            transform: scale(1.05);
+          }
+          
+          .instagram-btn {
+            background-color: #E4405F;
+            border: 2px solid #E4405F;
+            color: white;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+          }
+          
+          .instagram-btn:hover {
+            background-color: #E4405F;
+            color: white;
+            border-color: #E4405F;
+            transform: scale(1.05);
+          }
+
+          .start-application-btn {
+            background-color: #108515;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+          }
+
+          .start-application-btn:hover {
+            background-color: white;
+            color: #108515;
+            border-color: white;
+          }
+        `}
+        </style>
     <div
       className="container-fluid py-5 d-flex justify-content-center align-items-center flex-wrap mainCarousal"
       style={{
-        height: '1300px',
         backgroundImage:
           `url(${coverImage})`,
         backgroundSize: 'cover',
+        height: '900px',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         position: 'relative',
@@ -59,14 +133,36 @@ const color = "#108515"
           <h1
             data-aos="fade-right"
             data-aos-duration="1500"
-            className={`${isMobile ? 'fw-bold fs-3' : 'display-5 fw-bold px-5'}`}
+            className={`${isMobile ? 'fw-bold fs-3' : 'display-5 fw-bold px-5'} heading`}
             style={{ color: 'white' }}
           >
             The Akhuwat Foundation Loan Program is seen by many experts as one of the best ways to get a loan in Pakistan.
           </h1>
         </div>
 
-        <div className="col-md-6 d-flex justify-content-center align-items-center">
+        <div className="col-md-6 d-flex justify-content-center align-items-center my-3">
+            <div
+              className='p-4'
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '20px'
+              }}
+            >
+              {/* Start Application Button */}
+              <Link 
+                className="start-application-btn text-decoration-none car-btn" 
+                to="loan-form" 
+                role="button"
+              >
+                Start Your Application
+              </Link>
+
+        {/* <div className="col-md-6 d-flex justify-content-center align-items-center">
           <div
             data-aos="fade-left"
             data-aos-duration="1500"
@@ -288,9 +384,12 @@ const color = "#108515"
               <p className='pt-3'>If you have submitted your loan request, then check your status by <a href="#loan-status">clicking here</a></p>
             </form>
           </div>
-        </div>
+        </div> */}
+      </div>
+      </div>
       </div>
     </div>
+    </>
   );
 };
 

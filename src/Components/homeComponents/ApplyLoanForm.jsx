@@ -29,7 +29,7 @@ const ApplyLoanForm = () => {
     const color = "#108515"
   return (
     // col-md-6
-   <div className=" d-flex justify-content-center align-items-center m-5">
+   <div className=" d-flex justify-content-center align-items-center m-5" id='loan-form'>
           <div
             data-aos="fade-left"
             data-aos-duration="1500"
