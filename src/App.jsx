@@ -22,6 +22,15 @@ import AkhuwatPakistanLoan from './Components/akhuwatPakistanLoan';
 import AkhuwatLoanKarachi from './Components/akhuwatLoanKarachi';
 import AkhuwatLoanLahore from './Components/akhuwatLoanLahore';
 import AkhuwatLoanMultan from './Components/akhuwatLoanMultan';
+import AkhuwatLoanHeadOfficeNumber from "./Components/akhuwatLoanHeadOfficeNumber";
+import AkhuwatLoanHelplineNumber from "./Components/akhuwatLoanHelplineNumber";
+import AkhuwatLoan2026 from "./Components/akhuwatLoan2026";
+import AkhuwatLoanNetwork from "./Components/akhuwatLoanNetwork";
+import AkhuwatFoundationHelpline from "./Components/akhuwatFoundationHelpline";
+import AkhuwatLoanOnline from "./Components/akhuwatLoanOnline";
+import AkhuwatLoanIslamabad from "./Components/akhuwatLoanIslamabad";
+import AkhuwatLoanPeshawar from "./Components/akhwatLoanPeshawar";
+import AkhuwatOfficialNumber from "./Components/akhuwatOfficialNumber";
 
 import {
 
@@ -117,6 +126,41 @@ const location = useLocation()
         <Route exact path="/akhuwat-loan-multan">
           <AkhuwatLoanMultan />
         </Route>
+         <Route exact path="/akhuwat-loan-head-office-number">
+        <AkhuwatLoanHeadOfficeNumber />
+      </Route>
+
+      <Route exact path="/akhuwat-loan-helpline-number">
+        <AkhuwatLoanHelplineNumber />
+      </Route>
+
+      <Route exact path="/akhuwat-loan-2026">
+        <AkhuwatLoan2026 />
+      </Route>
+
+      <Route exact path="/akhuwat-loan-network">
+        <AkhuwatLoanNetwork />
+      </Route>
+
+      <Route exact path="/akhuwat-foundation-helpline">
+        <AkhuwatFoundationHelpline />
+      </Route>
+
+      <Route exact path="/akhuwat-loan-online">
+        <AkhuwatLoanOnline />
+      </Route>
+
+      <Route exact path="/akhuwat-loan-islamabad">
+        <AkhuwatLoanIslamabad />
+      </Route>
+
+      <Route exact path="/akhuwat-loan-peshawar">
+        <AkhuwatLoanPeshawar />
+      </Route>
+
+      <Route exact path="/akhuwat-official-number">
+        <AkhuwatOfficialNumber />
+      </Route>
         <Route exact path="/about-us">
           <AboutUs />
         </Route>
